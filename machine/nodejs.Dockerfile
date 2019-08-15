@@ -20,5 +20,8 @@ RUN mv yarn-v1.17.3 /usr/local/yarn
 
 RUN ln -s  /usr/local/nodejs/node-v10.16.2-linux-x64/bin/* /usr/bin/
 RUN ln -s /usr/local/yarn/yarn-v1.17.3/bin/yarn* /usr/bin/
+
 RUN yarn global add pm2
+RUN yarn global add typescript
+
 CMD [ "node", '--version' ]
